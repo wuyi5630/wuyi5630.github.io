@@ -5,12 +5,34 @@
   
   <title>wuyi5630博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="pinpoint 源码分析系列 Agent-1.启动加载插件分析Agent加载类采用了JDK的Instrumentation技术。
+
+程序的入口为：com.navercorp.pinpoint.bootstrap.PinpointBootStrap
+入口方法自然而然的是premain方法：
+
+获取环境变量
+1final ClassPathResolver classPathResolver = n">
+<meta property="og:type" content="article">
 <meta property="og:title" content="wuyi5630博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/03/03/pinpoint源码分析系列1.启动加载插件分析/index.html">
 <meta property="og:site_name" content="wuyi5630博客">
+<meta property="og:description" content="pinpoint 源码分析系列 Agent-1.启动加载插件分析Agent加载类采用了JDK的Instrumentation技术。
+
+程序的入口为：com.navercorp.pinpoint.bootstrap.PinpointBootStrap
+入口方法自然而然的是premain方法：
+
+获取环境变量
+1final ClassPathResolver classPathResolver = n">
+<meta property="og:updated_time" content="2017-03-03T08:06:12.150Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wuyi5630博客">
+<meta name="twitter:description" content="pinpoint 源码分析系列 Agent-1.启动加载插件分析Agent加载类采用了JDK的Instrumentation技术。
+
+程序的入口为：com.navercorp.pinpoint.bootstrap.PinpointBootStrap
+入口方法自然而然的是premain方法：
+
+获取环境变量
+1final ClassPathResolver classPathResolver = n">
   
     <link rel="alternate" href="/atom.xml" title="wuyi5630博客" type="application/atom+xml">
   
@@ -59,54 +81,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-spring/hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/21/spring/hello-world/" class="article-date">
-  <time datetime="2017-03-21T04:22:47.438Z" itemprop="datePublished">2017-03-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/21/spring/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/21/spring/hello-world/" data-id="cj0j1cmc60000bqg3mj8f185n" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-pinpoint源码分析系列1.启动加载插件分析" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-pinpoint源码分析系列1.启动加载插件分析" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/03/pinpoint源码分析系列1.启动加载插件分析/" class="article-date">
   <time datetime="2017-03-03T08:12:30.007Z" itemprop="datePublished">2017-03-03</time>
@@ -169,107 +144,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/03/hello-world/" class="article-date">
-  <time datetime="2017-02-03T04:42:09.377Z" itemprop="datePublished">2017-02-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2017/03/21/spring/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/03/hello-world/" data-id="ciztjnind0001ksg33rn48s6u" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-pinpoint的Collector-UDP源码分析" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/01/20/pinpoint的Collector-UDP源码分析/" class="article-date">
-  <time datetime="2017-01-20T00:55:29.000Z" itemprop="datePublished">2017-01-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/pinpoint-apm/">pinpoint apm</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          Hello World
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/20/pinpoint的Collector-UDP源码分析/">pinpoint的Collector-UDP部分源码分析</a>
-    </h1>
   
+    <a href="/2017/02/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="pinpoint的Collector-UDP部分源码分析"><a href="#pinpoint的Collector-UDP部分源码分析" class="headerlink" title="pinpoint的Collector-UDP部分源码分析"></a>pinpoint的Collector-UDP部分源码分析</h2><p>接上一篇文章，接下来对Collector中的UDP部分进行源码解析。最重要的类是UDPReceiver，在<code>applicationContext-collector.xml</code>中，<code>udpSpanReceiver</code>，<code>udpStatReceiver</code>注入到<code>UDPReceiver</code>。</p>
-<blockquote>
-<p>注： <code>constructor-arg index=1</code>  指的是按照构造方法的参数列表顺序</p>
-</blockquote>
-<p>udp部分主要是传输分布式服务调用的信息与agent状态的信息。<br></p>
-<blockquote>
-<p>知识备注：</p>
-<p>从Java EE 5规范开始，Servlet中增加了两个影响Servlet生命周期的注解（Annotion):<code>@PostConstruct</code>和<code>@PreDestroy</code>。这两个注解被用来修饰一个非静态的void()方法 。写法有如下两种方式：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@PostConstruct</span></div><div class="line"><span class="function">Public <span class="keyword">void</span> <span class="title">someMethod</span><span class="params">()</span> </span>&#123;&#125;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>或者<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="meta">@PostConstruct</span> <span class="function"><span class="keyword">void</span> <span class="title">someMethod</span><span class="params">()</span></span>&#123;&#125;</div></pre></td></tr></table></figure></p>
-<p> 被@PostConstruct修饰的方法会在服务器加载Servle的时候运行，并且只会被服务器执行一次。PostConstruct在构造函数之后执行,init()方法之前执行。PreDestroy（）方法在destroy()方法执行执行之后执行。</p>
-<p>UDPReceiver是对DataReceiver的实现，<br>首先执行UDPReceiver的构造函数，并调用被<code>@PostConstruct</code>修饰<code>start()</code>方法。<code>start()</code>方法中先后调用<code>afterPropertiesSet()</code>,<code>bindSocket（）</code>，<code>receive()</code>方法。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@PostConstruct</span></div><div class="line">   <span class="meta">@Override</span></div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span> </span>&#123;</div><div class="line">       logger.info(<span class="string">"&#123;&#125; start."</span>, receiverName);</div><div class="line">       afterPropertiesSet();</div><div class="line">       <span class="keyword">final</span> DatagramSocket socket = <span class="keyword">this</span>.socket;</div><div class="line">       <span class="keyword">if</span> (socket == <span class="keyword">null</span>) &#123;</div><div class="line">           <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="string">"socket is null."</span>);</div><div class="line">       &#125;</div><div class="line">       bindSocket(socket, bindAddress, port); <span class="comment">//绑定socket，socket通过执行UDPReceiver的构造函数createSocket方法进行创建，</span></div><div class="line">       										<span class="comment">//参数receiveBufferSize，以及timeout时间。</span></div><div class="line">       logger.info(<span class="string">"UDP Packet reader:&#123;&#125; started."</span>, ioThreadSize);</div><div class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ioThreadSize; i++) &#123;</div><div class="line">           io.execute(<span class="keyword">new</span> Runnable() &#123;</div><div class="line">               <span class="meta">@Override</span></div><div class="line">               <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">                   receive(socket);</div><div class="line">               &#125;</div><div class="line">           &#125;);</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   </div><div class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">receive</span><span class="params">(<span class="keyword">final</span> DatagramSocket socket)</span> </span>&#123;</div><div class="line">       <span class="keyword">if</span> (logger.isInfoEnabled()) &#123;</div><div class="line">           logger.info(<span class="string">"start ioThread localAddress:&#123;&#125;, IoThread:&#123;&#125;"</span>, <span class="keyword">this</span>.socket.getLocalAddress(), Thread.currentThread().getName());</div><div class="line">       &#125;</div><div class="line">       <span class="keyword">final</span> SocketAddress localSocketAddress = socket.getLocalSocketAddress();</div><div class="line">       <span class="keyword">final</span> <span class="keyword">boolean</span> debugEnabled = logger.isDebugEnabled();</div><div class="line"></div><div class="line">       <span class="comment">// need shutdown logic</span></div><div class="line">       <span class="keyword">while</span> (state.get()) &#123;</div><div class="line">           PooledObject&lt;DatagramPacket&gt; pooledPacket = read0(socket);</div><div class="line">           <span class="keyword">if</span> (pooledPacket == <span class="keyword">null</span>) &#123;</div><div class="line">               <span class="keyword">continue</span>;</div><div class="line">           &#125;</div><div class="line">           <span class="keyword">final</span> DatagramPacket packet = pooledPacket.getObject();</div><div class="line">           <span class="keyword">if</span> (packet.getLength() == <span class="number">0</span>) &#123;</div><div class="line">               <span class="keyword">if</span> (debugEnabled) &#123;</div><div class="line">                   logger.debug(<span class="string">"length is 0 ip:&#123;&#125;, port:&#123;&#125;"</span>, packet.getAddress(), packet.getPort());</div><div class="line">               &#125;</div><div class="line">               <span class="keyword">return</span>;</div><div class="line">           &#125;</div><div class="line">           <span class="keyword">try</span> &#123;</div><div class="line">               Runnable dispatchTask = wrapDispatchTask(pooledPacket);</div><div class="line">               worker.execute(dispatchTask);</div><div class="line">           &#125; <span class="keyword">catch</span> (RejectedExecutionException ree) &#123;</div><div class="line">               handleRejectedExecutionException(ree);</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">       <span class="keyword">if</span> (logger.isInfoEnabled()) &#123;</div><div class="line">           logger.info(<span class="string">"stop ioThread localAddress:&#123;&#125;, IoThread:&#123;&#125;"</span>, localSocketAddress, Thread.currentThread().getName());</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">afterPropertiesSet</span><span class="params">()</span> </span>&#123;</div><div class="line">       Assert.notNull(metricRegistry, <span class="string">"metricRegistry must not be null"</span>);</div><div class="line">       Assert.notNull(packetHandlerFactory, <span class="string">"packetHandlerFactory must not be null"</span>);</div><div class="line"></div><div class="line">       <span class="keyword">this</span>.worker = createWorker(workerOption, receiverName + <span class="string">"-Worker"</span>);</div><div class="line">       <span class="keyword">if</span> (workerOption.isEnableCollectMetric()) &#123;</div><div class="line">           <span class="keyword">this</span>.worker = <span class="keyword">new</span> MonitoredExecutorService(worker, metricRegistry, receiverName + <span class="string">"-Worker"</span>);</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       <span class="keyword">final</span> <span class="keyword">int</span> packetPoolSize = getPacketPoolSize(workerOption);</div><div class="line">       <span class="keyword">this</span>.datagramPacketPool = <span class="keyword">new</span> DefaultObjectPool&lt;&gt;(<span class="keyword">new</span> DatagramPacketFactory(), packetPoolSize);</div><div class="line"></div><div class="line">       <span class="keyword">this</span>.io = (ThreadPoolExecutor) Executors.newCachedThreadPool(<span class="keyword">new</span> PinpointThreadFactory(receiverName + <span class="string">"-Io"</span>, <span class="keyword">true</span>));</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   </div><div class="line"></div><div class="line">   <span class="function"><span class="keyword">private</span> Runnable <span class="title">wrapDispatchTask</span><span class="params">(<span class="keyword">final</span> PooledObject&lt;DatagramPacket&gt; pooledPacket)</span> </span>&#123;</div><div class="line">       <span class="keyword">final</span> Runnable lazyExecution = <span class="keyword">new</span> Runnable() &#123;</div><div class="line">           <span class="meta">@Override</span></div><div class="line">           <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">               PacketHandler&lt;DatagramPacket&gt; dispatchPacket = packetHandlerFactory.createPacketHandler();</div><div class="line">               PooledPacketWrap pooledPacketWrap = <span class="keyword">new</span> PooledPacketWrap(dispatchPacket, pooledPacket);</div><div class="line">               Runnable execution = pooledPacketWrap;</div><div class="line">               execution.run();</div><div class="line">           &#125;</div><div class="line">       &#125;;</div><div class="line">       <span class="keyword">return</span> lazyExecution;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   <span class="function"><span class="keyword">private</span> PooledObject&lt;DatagramPacket&gt; <span class="title">read0</span><span class="params">(<span class="keyword">final</span> DatagramSocket socket)</span> </span>&#123;</div><div class="line">       <span class="keyword">boolean</span> success = <span class="keyword">false</span>;</div><div class="line">       PooledObject&lt;DatagramPacket&gt; pooledObject = datagramPacketPool.getObject();</div><div class="line">       <span class="keyword">if</span> (pooledObject == <span class="keyword">null</span>) &#123;</div><div class="line">           logger.error(<span class="string">"datagramPacketPool is empty"</span>);</div><div class="line">           <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">       &#125;</div><div class="line">       DatagramPacket packet = pooledObject.getObject();</div><div class="line">       <span class="keyword">try</span> &#123;</div><div class="line">           <span class="keyword">try</span> &#123;</div><div class="line">               socket.receive(packet);</div><div class="line">               success = <span class="keyword">true</span>;</div><div class="line">           &#125; <span class="keyword">catch</span> (SocketTimeoutException e) &#123;</div><div class="line">               <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">           &#125;</div><div class="line">           <span class="keyword">if</span> (logger.isDebugEnabled()) &#123;</div><div class="line">               logger.debug(<span class="string">"DatagramPacket SocketAddress:&#123;&#125; read size:&#123;&#125;"</span>, packet.getSocketAddress(), packet.getLength());</div><div class="line">               <span class="keyword">if</span> (logger.isTraceEnabled()) &#123;</div><div class="line">                   <span class="comment">// use trace as packet dump may be large</span></div><div class="line">                   logger.trace(<span class="string">"dump packet:&#123;&#125;"</span>, PacketUtils.dumpDatagramPacket(packet));</div><div class="line">               &#125;</div><div class="line">           &#125;</div><div class="line">       &#125; <span class="keyword">catch</span> (IOException e) &#123;</div><div class="line">           <span class="keyword">if</span> (!state.get()) &#123;</div><div class="line">               <span class="comment">// shutdown</span></div><div class="line">           &#125; <span class="keyword">else</span> &#123;</div><div class="line">               logger.error(<span class="string">"IoError, Caused:"</span>, e.getMessage(), e);</div><div class="line">           &#125;</div><div class="line">           <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">       &#125; <span class="keyword">finally</span> &#123;</div><div class="line">           <span class="keyword">if</span> (!success) &#123;</div><div class="line">               pooledObject.returnObject();</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">       <span class="keyword">return</span> pooledObject;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   <span class="function"><span class="keyword">private</span> DatagramSocket <span class="title">createSocket</span><span class="params">(<span class="keyword">int</span> receiveBufferSize)</span> </span>&#123;</div><div class="line">       <span class="keyword">try</span> &#123;</div><div class="line">           DatagramSocket socket = <span class="keyword">new</span> DatagramSocket(<span class="keyword">null</span>);</div><div class="line">           socket.setReceiveBufferSize(receiveBufferSize);</div><div class="line">           <span class="keyword">if</span> (logger.isWarnEnabled()) &#123;</div><div class="line">               <span class="keyword">final</span> <span class="keyword">int</span> checkReceiveBufferSize = socket.getReceiveBufferSize();</div><div class="line">               <span class="keyword">if</span> (receiveBufferSize != checkReceiveBufferSize) &#123;</div><div class="line">                   logger.warn(<span class="string">"DatagramSocket.setReceiveBufferSize() error. &#123;&#125;!=&#123;&#125;"</span>, receiveBufferSize, checkReceiveBufferSize);</div><div class="line">               &#125;</div><div class="line">           &#125;</div><div class="line">           socket.setSoTimeout(<span class="number">1000</span> * <span class="number">5</span>);</div><div class="line">           <span class="keyword">return</span> socket;</div><div class="line">       &#125; <span class="keyword">catch</span> (SocketException ex) &#123;</div><div class="line">           <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"Socket create Fail. Caused:"</span> + ex.getMessage(), ex);</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/20/pinpoint的Collector-UDP源码分析/" data-id="ciztjninn0002ksg3uvyuk9ev" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
